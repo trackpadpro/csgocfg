@@ -10,4 +10,8 @@ By default, [all] users on the computer will have their config files replaced an
 
 #
 
-Place .cfg files in: ```.\Steam\userdata\[SteamFriendCode]\730\local\cfg``` where [SteamFriendCode] is a 9-digit token found in a Steam browser under Friends->Add a Friend.
+Alternatively, place .cfg files in: ```.\Steam\userdata\[SteamFriendCode]\730\local\cfg```.
+
+#
+
+[SteamFriendCode] is a 9-digit token found in a Steam browser under Friends->Add a Friend.
