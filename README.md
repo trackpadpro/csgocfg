@@ -14,4 +14,4 @@ Alternatively, place .cfg files in: ```.\Steam\userdata\[SteamFriendCode]\730\lo
 
 #
 
-[SteamFriendCode] is a 9-digit token found in a Steam browser under Friends->Add a Friend.
+```[SteamFriendCode]``` is a 9-digit token found in a Steam browser under Friends->Add a Friend.
