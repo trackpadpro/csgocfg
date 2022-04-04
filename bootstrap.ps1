@@ -1,4 +1,4 @@
-param ($u='all', $pano='off')
+param($u='all', $pano='off')
 
 if(Test-Path -Path 'C:\Program Files (x86)\Steam'){
 	if($u -eq 'all'){
