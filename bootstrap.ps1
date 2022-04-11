@@ -19,7 +19,7 @@ else{
 
 if($pano -eq 'on'){
 	if(Test-Path -Path 'C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo'){
-		Copy-Item '.\pano\ancient.webm' -Destination 'C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\panorama\videos'
+		Copy-Item -Filter *.webm -Path '.\pano\*' -Recurse -Destination 'C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\panorama\videos\ancient.webm'
 	}
 	else{
 		Write-Error 'CSGO installation not found in default directory'
