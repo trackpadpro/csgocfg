@@ -1,4 +1,13 @@
-param($u='213770434', $path='C:\Program Files (x86)\Steam')
+param($u='213770434', $path='C:\Program Files (x86)\Steam', $cs2='on')
+
+if($cs2 -eq 'on'){
+	if(Test-Path -Path "$path\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\autoexec.cfg"){
+		Copy-Item "$path\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\autoexec.cfg" -Destination '.\cfg\cs2'
+	}
+	else{
+		Write-Error 'CS2 autoexec not found in default directory'
+	}
+}
 
 $path="$path\userdata\$u\730\local\cfg"
 
@@ -10,7 +19,7 @@ if(Test-Path -Path $path){
 				Write-Verbose "$path\$_ matches repository version"
 			}
 			else{
-				Copy-Item "$path\$_" -Destination '.\cfg'
+				Copy-Item "$path\$_" -Destination '.\cfg\cs1'
 			}
 		}
 		else{

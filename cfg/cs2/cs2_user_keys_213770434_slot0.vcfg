@@ -1,0 +1,10 @@
+"config"
+{
+	"bindings"
+	{
+		"CTRL"		"<unbound>"
+		"MOUSE5"	"+duck"
+		"y"		"<unbound>"
+		"ENTER"		"messagemode"
+	}
+}
